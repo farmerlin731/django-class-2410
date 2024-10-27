@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django-class-2410"
+version = "0.1.0"
+description = ""
+authors = ["farmerlin731 <69831413+farmerlin731@users.noreply.github.com>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = "^3.13"
+django = "^5.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
