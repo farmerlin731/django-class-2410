@@ -18,7 +18,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from first.views import message_view, say_hello
+from first.views import message_view, say_hello, say_hello_page
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -27,4 +27,5 @@ urlpatterns = [
         message_view,
     ),
     path("say-hello/", say_hello),
+    path("say-hello-page/", say_hello_page),
 ]
