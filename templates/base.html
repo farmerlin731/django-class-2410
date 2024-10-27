@@ -3,10 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A Django Website.">
+        <meta name="keywords" content="Django,Test,Website">
         <title>Django 1027</title>
     </head>
     <body>
         {% block body %}
+            <p>block_body_start</p>
+            {% block content %}
+                <p>ori_content</p>
+            {% endblock content %}
+            <p>block_body_end</p>
         {% endblock body %}
     </body>
 </html>
