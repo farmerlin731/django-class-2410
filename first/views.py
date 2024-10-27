@@ -16,5 +16,7 @@ def say_hello(request):
 
 # Url example: http://localhost:8000/say-hello/?name=jack
 def say_hello_page(request):
-    names = ["Allen", "Boy", "Cat", "Faremr"]
-    return render(request, "say_hello.html", {"names": names})
+    # names = ["Allen", "Boy", "Cat", "Faremr"]
+    name = request.POST.get("name", "unknown")
+
+    return render(request, "say_hello.html", {"name": name})
