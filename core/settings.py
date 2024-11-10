@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # Thrid party APPS
+    "django_extensions",
+    # Local APPS
     "first",
     "todo",
 ]
